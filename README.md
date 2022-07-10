@@ -1,8 +1,5 @@
-# Wordcloud Images for Wikipedia Article
-Python script that prompts the user for an input, searches for the corresponding article on wikipedia and generates a wordcloud based on the searched article.
+###WORD CLOUD GENERATOR FROM WIKIPEDIA
 
-### Prerequisites
-`pip install` the models in `requirements.txt` from your command prompt.
+Word Cloud is a data visualization technique used for representing text data in which the size of each word indicates its frequency or importance. Significant textual data points can be highlighted using a word cloud. Word clouds are widely used for analyzing data from social network websites.
 
-### How to run the script
-Run like any other python file. Upon executing, the wordcloud image will be saved to the current directory. The script will also prompt a y/n if the user wants to see the generated image during execution.
+Author <a href="https://github.com/tanya-johari"></a>

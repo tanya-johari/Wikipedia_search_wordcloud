@@ -1,8 +1,10 @@
-from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+from wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plt
 import wikipedia
 import sys
 import warnings
+
+
 # supressing unnecessary warnings
 warnings.filterwarnings("ignore")
 
@@ -14,10 +16,12 @@ def gen_cloud(topic):
     except:
         print("Error, try searching something else...")
         sys.exit()
+        
     STOPWORDS.add('==')
     stopwords = set(STOPWORDS)
     wordcloud = WordCloud(stopwords=stopwords, max_words=200, background_color="black", width=600, height=350).generate(content)
     return wordcloud
+
 
 
 # function to save the wordcloud to current directory
@@ -25,11 +29,13 @@ def save_cloud(wordcloud):
     wordcloud.to_file("./wordcloud.png")
 
 
+
 # function to display the wordcloud with matplotlib
 def show_cloud(wordcloud):
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis("off")
     plt.show()
+
 
 
 # driver code
